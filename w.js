@@ -45,5 +45,7 @@ const getData= async(x,y)=> {
   document.querySelector("#city").innerHTML=data.location.name;
   document.querySelector("#temp").innerHTML=data.current.temp_c+"º";
   document.querySelector("#t").innerHTML=data.current.condition.text;
+  document.querySelector("#wind").innerHTML=data.current.wind_kph;
+  document.querySelector("#hu").innerHTML=data.current.humidity;
 }
 getLocation();
